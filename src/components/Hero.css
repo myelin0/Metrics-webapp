@@ -1,0 +1,13 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 30px 0;
+  margin-bottom: 15px;
+  background-color: #EC4C8A;
+}
+.title {
+  color: #fff;
+}
+
