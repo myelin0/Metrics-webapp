@@ -10,3 +10,53 @@
 #root {
   background-color: #ec4c8a;
 }
+
+
+.wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.country-card {
+  list-style: none;
+  padding: 0;
+}
+
+li:nth-child(odd) {
+  background: #4369b2;
+}
+
+.icon {
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.name {
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+}
+
+.population {
+  font-size: 18px;
+  color: #fff;
+}
+
+@media (min-width: 800px) {
+  .wrap {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  .wrap {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
