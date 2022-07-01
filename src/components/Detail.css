@@ -11,7 +11,11 @@ body {
 .items {
   padding: 0;
 }
-
+.flag {
+  border-radius : 50%;
+  width: 6rem;
+  height: 6rem;
+}
 .item {
   display: flex;
   justify-content: space-between;

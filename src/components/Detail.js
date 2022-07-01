@@ -1,8 +1,27 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import worldmap from '../img/worldmap.png';
 
 import { Modal } from 'react-bootstrap';
 import './Detail.css';
+
+export const readablePopulation = (labelValue) =>
+{
+    // Nine Zeroes for Billions
+    return Math.abs(Number(labelValue)) >= 1.0e+9
+
+    ? Math.abs(Number(labelValue)) / 1.0e+9 + "B"
+    // Six Zeroes for Millions 
+    : Math.abs(Number(labelValue)) >= 1.0e+6
+
+    ? Math.abs(Number(labelValue)) / 1.0e+6 + "M"
+    // Three Zeroes for Thousands
+    : Math.abs(Number(labelValue)) >= 1.0e+3
+
+    ? Math.abs(Number(labelValue)) / 1.0e+3 + "K"
+
+    : Math.abs(Number(labelValue));
+}
 
 const Detail = () => {
   const countries = useSelector((state) => state.allCountries);
@@ -16,15 +35,15 @@ const Detail = () => {
         <div  key={country.name}>
           <ul key={country.name} className="items">
           <header>
-            <img className="globe" src={country.flag} alt="globe" />
+            <img className="flag" src={country.flag} alt="country flag" />
             <h2 className="title">{country.name}</h2>
           </header>
             <li className="item py-2 px-5">
               <p className="population">Population: </p>
-              <p className="population">{country.population}</p>
+              <p className="population">{readablePopulation(country.population)}</p>
             </li>
             <li className="item py-2 px-5">
-              <p className="population">continent: </p>
+              <p className="population">Continent: </p>
               <p className="population">{country.continent}</p>
             </li>
             <li className="item py-2 px-5">

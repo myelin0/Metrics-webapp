@@ -8,9 +8,9 @@ export const getCountriesData = createAsyncThunk('countries/getCountriesData', a
     const countries = data.map((country) => ({
       id: country.name.common,
       name: country.name.common,
+      capital:country.capital,
       population: country.population,
       flag: country.flags.png,
-      capital: country.capital,
       region: country.region,
       continent: country.continents,
       map: country.maps.googleMaps,

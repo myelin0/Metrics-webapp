@@ -4,7 +4,8 @@ import { useSelector, useDispatch } from 'react-redux';
 import { countryDetails, getCountriesData } from '../redux/countrySlice';
 import './Home.css';
 import Query from './Query';
-import Hero from './Hero'
+import Hero from './Hero';
+import { readablePopulation } from './Detail';
 
 const Home = () => {
   const [query, setQuery] = useState('');
@@ -45,7 +46,7 @@ const Home = () => {
                   {country.name}
                 </h5>
               </Link>
-              <p className="population">{`Population : ${country.population}`}</p>
+              <p className="population">{`Population : ${readablePopulation(country.population)}`}</p>
             </li>
           ))}
         </ul>
