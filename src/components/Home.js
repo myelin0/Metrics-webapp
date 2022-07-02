@@ -21,11 +21,6 @@ const Home = () => {
     dispatch(getCountriesData());
   }, [dispatch]);
 
-  const countryDetailsHandler = ({ target }) => {
-    const { id } = target;
-    dispatch(countryDetails(id));
-  };
-
   const queryHandler = (e) => {
     setQuery(e.target.value);
   };
@@ -41,7 +36,10 @@ const Home = () => {
                 <h5
                   className="name py-2"
                   id={country.name}
-                  onClick={countryDetailsHandler}
+                  onClick= {({ target }) => {
+                  const { id } = target;
+                  dispatch(countryDetails(id))
+                  }}
                 >
                   {country.name}
                 </h5>
