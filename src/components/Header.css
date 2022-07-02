@@ -5,6 +5,7 @@ nav {
   background-color: #ec4c8a;
   color: #fff;
   padding: 12px;
+  box-sizing: border-box;
 }
 
 .middle-text {

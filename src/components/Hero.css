@@ -11,3 +11,14 @@ header {
 .title {
   color: #fff;
 }
+
+.world {
+  width: 60%;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.globe {
+  width: 6rem;
+  height: 6rem;
+}
