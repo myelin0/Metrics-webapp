@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Metrics-webapp/static/css/main.961937c4.css",
+    "main.js": "/Metrics-webapp/static/js/main.690e3954.js",
+    "static/media/worldmap.png": "/Metrics-webapp/static/media/worldmap.e56a5e794e7ee9bbd3d1.png",
+    "index.html": "/Metrics-webapp/index.html",
+    "main.961937c4.css.map": "/Metrics-webapp/static/css/main.961937c4.css.map",
+    "main.690e3954.js.map": "/Metrics-webapp/static/js/main.690e3954.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.961937c4.css",
+    "static/js/main.690e3954.js"
+  ]
+}
