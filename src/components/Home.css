@@ -8,5 +8,59 @@
 }
 
 #root {
-  background-color: #EC4C8A;
+  background-color: #ec4c8a;
+}
+
+.wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.country-card {
+  list-style: none;
+  padding: 0;
+}
+
+/* .country-card:hover {
+  box-shadow: 0 30px 18px -8px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05, 1.05);
+} */
+
+li:nth-child(odd) {
+  background: #cd4176;
+}
+
+.icon {
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.name {
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+}
+
+.population {
+  font-size: 18px;
+  color: #fff;
+}
+
+@media (min-width: 800px) {
+  .wrap {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  .wrap {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
 }
