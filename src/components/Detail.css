@@ -5,14 +5,15 @@
 }
 
 body {
-  background-color: #CD4176;
+  background-color: #cd4176;
 }
 
 .items {
   padding: 0;
 }
+
 .flag {
-  border-radius : 50%;
+  border-radius: 50%;
   width: 6rem;
   height: 6rem;
 }
@@ -26,5 +27,5 @@ body {
 }
 
 li:nth-child(odd) {
-  background: #CD4176;
+  background: #cd4176;
 }
